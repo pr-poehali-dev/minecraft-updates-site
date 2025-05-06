@@ -69,6 +69,10 @@ const config = {
             foreground: "hsl(var(--sidebar-accent-foreground))",
           },
         },
+        minecraft: {
+          yellow: "#d1bb5f",
+          dark: "#252525",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -77,6 +81,7 @@ const config = {
       },
       fontFamily: {
         sans: ["Inter var", ...fontFamily.sans],
+        mono: ["JetBrains Mono", ...fontFamily.mono],
       },
       keyframes: {
         "accordion-down": {
@@ -91,6 +96,13 @@ const config = {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+      },
+      typography: {
+        DEFAULT: {
+          css: {
+            maxWidth: '100%',
+          },
+        },
       },
     },
   },
